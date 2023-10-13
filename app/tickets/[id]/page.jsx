@@ -16,9 +16,10 @@ export async function generateStaticParams() {
 
 //Fetch Tickets from JSON server. Setting revalidation to 60 so that 
 async function getTicket(id) {
+    await new Promise(resolve => setTimeout(resolve, 3000))
     const res = await fetch('http://localhost:4000/tickets/' + id, {
         next: {
-            revalidate: 60
+            revalidate: 10
         }
     })
     if (!res.ok) {
