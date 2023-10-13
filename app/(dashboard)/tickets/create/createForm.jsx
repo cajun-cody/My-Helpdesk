@@ -66,7 +66,7 @@ export default function CreateForm() {
     //   </button>
     // </form>
     <div className="flex justify-center">
-            <form onSubmit={handleSubmit} className="w-1/2 center">
+            <form onSubmit={handleSubmit} className="w-1/2 center  bg-secondary bg-opacity-95 p-4 rounded-lg">
     <label className="block mb-2">
       <span className="text-gray-700">Title:</span>
       <input

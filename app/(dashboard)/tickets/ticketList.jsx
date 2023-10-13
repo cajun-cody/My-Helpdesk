@@ -4,7 +4,7 @@ import React from 'react';
 //Fetch Tickets from JSON server. 
 async function getTickets() {
     //Test Delay
-    await new Promise(resolve => setTimeout(resolve, 3000))
+    // await new Promise(resolve => setTimeout(resolve, 3000))
 
     const res = await fetch('http://localhost:4000/tickets', {
         next: {
